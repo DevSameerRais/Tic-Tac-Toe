@@ -1,0 +1,100 @@
+
+* {
+    box-sizing: border-box;
+}body{
+    background-color:lightblue;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    background-image: url(./93edb31f1b75422132d82c69c6a5de02.jpg!bw700);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.heading{
+    color: white;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.heading:hover{
+    color: white;
+}
+.container {
+    background-image: url(./neon-background-vertical-glowing-lines-bright-light-laser-rays-dark-stage_926199-1640715.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-color:rgb(73, 69, 69) ; 
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    
+}
+
+.box{
+    background-color: white;
+    width: 115px;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:8px ;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.box:hover {
+    background-color:  rgb(241, 172, 241); /* Purple on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+.board{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 375px;
+    height: 375px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5px;
+    font-size: 60px;
+}
+
+.restart{
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 50%;
+    font-weight: bold;
+    font-size: large;
+}
+.restart:hover {
+    background-color: #7b1fa2; /* Darker purple on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+#Xwins{
+    color:white;
+    font-size: large;
+    font-weight: bolder;
+}
+#Owins{
+    color:white;
+    font-size: large;
+    font-weight: bolder;
+}
+#player{
+    color:white;
+    font-size: large;
+    font-weight: bolder;
+}
+.restart:hover{
+    background-color:white;
+    color: black;
+}
