@@ -10,8 +10,8 @@ var box9 = document.getElementById("8");
 
 var count = 0;
 
+var stauts=document.getElementById("player")
 function textShow() {
-  var player=document.getElementById("player")
   if (count % 2 === 0) {
     player.innerHTML = "Player X's Turn";
     return "O";
@@ -38,6 +38,7 @@ function reset() {
   box8.innerHTML = "";
   box9.innerHTML = "";
   count = 0;
+  stauts.innerHTML = "Player O's Turn";
 }
 
 function game(number) {
@@ -78,6 +79,7 @@ function game(number) {
   // Reset
   if (count === 9) {
     alert("Draw")
+    stauts.innerHTML = "Player O's Turn";
     reset();
   }
 }
